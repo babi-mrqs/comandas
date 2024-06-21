@@ -33,6 +33,7 @@
             btnComanda = new ReaLTaiizor.Controls.CyberButton();
             btnPedido_Cozinha = new ReaLTaiizor.Controls.CyberButton();
             btnCardapio = new ReaLTaiizor.Controls.CyberButton();
+            btnSair = new ReaLTaiizor.Controls.CyberButton();
             cyberGroupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -59,7 +60,7 @@
             cyberGroupBox1.Lighting = false;
             cyberGroupBox1.LinearGradient_Background = false;
             cyberGroupBox1.LinearGradientPen = false;
-            cyberGroupBox1.Location = new Point(12, 150);
+            cyberGroupBox1.Location = new Point(12, 87);
             cyberGroupBox1.Name = "cyberGroupBox1";
             cyberGroupBox1.PenWidth = 15;
             cyberGroupBox1.RGB = false;
@@ -180,7 +181,7 @@
             btnPedido_Cozinha.Lighting = false;
             btnPedido_Cozinha.LinearGradient_Background = false;
             btnPedido_Cozinha.LinearGradientPen = false;
-            btnPedido_Cozinha.Location = new Point(484, 56);
+            btnPedido_Cozinha.Location = new Point(475, 56);
             btnPedido_Cozinha.Name = "btnPedido_Cozinha";
             btnPedido_Cozinha.PenWidth = 15;
             btnPedido_Cozinha.Rounding = true;
@@ -222,7 +223,7 @@
             btnCardapio.Lighting = false;
             btnCardapio.LinearGradient_Background = false;
             btnCardapio.LinearGradientPen = false;
-            btnCardapio.Location = new Point(31, 56);
+            btnCardapio.Location = new Point(30, 56);
             btnCardapio.Name = "btnCardapio";
             btnCardapio.PenWidth = 15;
             btnCardapio.Rounding = true;
@@ -237,15 +238,59 @@
             btnCardapio.Timer_RGB = 300;
             btnCardapio.Click += btnCardapio_Click;
             // 
+            // btnSair
+            // 
+            btnSair.Alpha = 20;
+            btnSair.BackColor = Color.Transparent;
+            btnSair.Background = true;
+            btnSair.Background_WidthPen = 4F;
+            btnSair.BackgroundPen = true;
+            btnSair.ColorBackground = Color.White;
+            btnSair.ColorBackground_1 = Color.Black;
+            btnSair.ColorBackground_2 = Color.White;
+            btnSair.ColorBackground_Pen = Color.Black;
+            btnSair.ColorLighting = Color.FromArgb(29, 200, 238);
+            btnSair.ColorPen_1 = Color.FromArgb(37, 52, 68);
+            btnSair.ColorPen_2 = Color.FromArgb(41, 63, 86);
+            btnSair.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            btnSair.Effect_1 = true;
+            btnSair.Effect_1_ColorBackground = Color.FromArgb(29, 200, 238);
+            btnSair.Effect_1_Transparency = 25;
+            btnSair.Effect_2 = true;
+            btnSair.Effect_2_ColorBackground = Color.White;
+            btnSair.Effect_2_Transparency = 20;
+            btnSair.Font = new Font("Segoe Print", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSair.ForeColor = Color.Black;
+            btnSair.Lighting = false;
+            btnSair.LinearGradient_Background = false;
+            btnSair.LinearGradientPen = false;
+            btnSair.Location = new Point(25, 408);
+            btnSair.Name = "btnSair";
+            btnSair.PenWidth = 15;
+            btnSair.Rounding = true;
+            btnSair.RoundingInt = 70;
+            btnSair.Size = new Size(162, 62);
+            btnSair.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            btnSair.TabIndex = 6;
+            btnSair.Tag = "Cyber";
+            btnSair.TextButton = "Sair";
+            btnSair.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            btnSair.Timer_Effect_1 = 5;
+            btnSair.Timer_RGB = 300;
+            btnSair.Click += btnSair_Click;
+            // 
             // FrmPrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ButtonFace;
+            BackColor = SystemColors.ActiveBorder;
             ClientSize = new Size(975, 482);
+            Controls.Add(btnSair);
             Controls.Add(cyberGroupBox1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FrmPrincipal";
-            Text = "Frm Principal";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Sistema de Comandas";
             cyberGroupBox1.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -256,5 +301,6 @@
         private ReaLTaiizor.Controls.CyberButton btnUsuario;
         private ReaLTaiizor.Controls.CyberButton btnComanda;
         private ReaLTaiizor.Controls.CyberButton btnPedido_Cozinha;
+        private ReaLTaiizor.Controls.CyberButton btnSair;
     }
 }

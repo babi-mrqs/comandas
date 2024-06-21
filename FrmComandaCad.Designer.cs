@@ -28,78 +28,65 @@
         /// </summary>
         private void InitializeComponent()
         {
-            groupBox1 = new GroupBox();
-            airButton1 = new ReaLTaiizor.Controls.AirButton();
-            metroButton1 = new ReaLTaiizor.Controls.MetroButton();
-            groupBox1.SuspendLayout();
+            cyberButton1 = new ReaLTaiizor.Controls.CyberButton();
             SuspendLayout();
             // 
-            // groupBox1
+            // cyberButton1
             // 
-            groupBox1.Controls.Add(metroButton1);
-            groupBox1.Controls.Add(airButton1);
-            groupBox1.Location = new Point(46, 57);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(676, 316);
-            groupBox1.TabIndex = 0;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "groupBox1";
-            // 
-            // airButton1
-            // 
-            airButton1.Customization = "7e3t//Ly8v/r6+v/5ubm/+vr6//f39//p6en/zw8PP8UFBT/gICA/w==";
-            airButton1.Font = new Font("Segoe UI", 9F);
-            airButton1.Image = null;
-            airButton1.Location = new Point(3, 23);
-            airButton1.Name = "airButton1";
-            airButton1.NoRounding = false;
-            airButton1.Size = new Size(125, 56);
-            airButton1.TabIndex = 0;
-            airButton1.Text = "airButton1";
-            airButton1.Transparent = false;
-            // 
-            // metroButton1
-            // 
-            metroButton1.DisabledBackColor = Color.FromArgb(120, 65, 177, 225);
-            metroButton1.DisabledBorderColor = Color.FromArgb(120, 65, 177, 225);
-            metroButton1.DisabledForeColor = Color.Gray;
-            metroButton1.Font = new Font("Microsoft Sans Serif", 10F);
-            metroButton1.HoverBorderColor = Color.FromArgb(95, 207, 255);
-            metroButton1.HoverColor = Color.FromArgb(95, 207, 255);
-            metroButton1.HoverTextColor = Color.White;
-            metroButton1.IsDerivedStyle = true;
-            metroButton1.Location = new Point(182, 137);
-            metroButton1.Name = "metroButton1";
-            metroButton1.NormalBorderColor = Color.FromArgb(65, 177, 225);
-            metroButton1.NormalColor = Color.FromArgb(65, 177, 225);
-            metroButton1.NormalTextColor = Color.White;
-            metroButton1.PressBorderColor = Color.FromArgb(35, 147, 195);
-            metroButton1.PressColor = Color.FromArgb(35, 147, 195);
-            metroButton1.PressTextColor = Color.White;
-            metroButton1.Size = new Size(186, 86);
-            metroButton1.Style = ReaLTaiizor.Enum.Metro.Style.Light;
-            metroButton1.StyleManager = null;
-            metroButton1.TabIndex = 1;
-            metroButton1.Text = "metroButton1";
-            metroButton1.ThemeAuthor = "Taiizor";
-            metroButton1.ThemeName = "MetroLight";
+            cyberButton1.Alpha = 20;
+            cyberButton1.BackColor = Color.Transparent;
+            cyberButton1.Background = true;
+            cyberButton1.Background_WidthPen = 4F;
+            cyberButton1.BackgroundPen = true;
+            cyberButton1.ColorBackground = Color.FromArgb(37, 52, 68);
+            cyberButton1.ColorBackground_1 = Color.FromArgb(37, 52, 68);
+            cyberButton1.ColorBackground_2 = Color.FromArgb(41, 63, 86);
+            cyberButton1.ColorBackground_Pen = Color.FromArgb(29, 200, 238);
+            cyberButton1.ColorLighting = Color.FromArgb(29, 200, 238);
+            cyberButton1.ColorPen_1 = Color.FromArgb(37, 52, 68);
+            cyberButton1.ColorPen_2 = Color.FromArgb(41, 63, 86);
+            cyberButton1.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            cyberButton1.Effect_1 = true;
+            cyberButton1.Effect_1_ColorBackground = Color.FromArgb(29, 200, 238);
+            cyberButton1.Effect_1_Transparency = 25;
+            cyberButton1.Effect_2 = true;
+            cyberButton1.Effect_2_ColorBackground = Color.White;
+            cyberButton1.Effect_2_Transparency = 20;
+            cyberButton1.Font = new Font("Arial", 11F);
+            cyberButton1.ForeColor = Color.FromArgb(245, 245, 245);
+            cyberButton1.Lighting = false;
+            cyberButton1.LinearGradient_Background = false;
+            cyberButton1.LinearGradientPen = false;
+            cyberButton1.Location = new Point(-2, 376);
+            cyberButton1.Name = "cyberButton1";
+            cyberButton1.PenWidth = 15;
+            cyberButton1.Rounding = true;
+            cyberButton1.RoundingInt = 70;
+            cyberButton1.Size = new Size(162, 62);
+            cyberButton1.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            cyberButton1.TabIndex = 0;
+            cyberButton1.Tag = "Cyber";
+            cyberButton1.TextButton = "CyberButton";
+            cyberButton1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            cyberButton1.Timer_Effect_1 = 5;
+            cyberButton1.Timer_RGB = 300;
+            cyberButton1.Click += cyberButton1_Click;
             // 
             // FrmComandaCad
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(groupBox1);
+            Controls.Add(cyberButton1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FrmComandaCad";
-            Text = "FrmComandaCad";
-            groupBox1.ResumeLayout(false);
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Cadastro Comandas";
             ResumeLayout(false);
         }
 
         #endregion
 
-        private GroupBox groupBox1;
-        private ReaLTaiizor.Controls.MetroButton metroButton1;
-        private ReaLTaiizor.Controls.AirButton airButton1;
+        private ReaLTaiizor.Controls.CyberButton cyberButton1;
     }
 }

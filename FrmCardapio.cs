@@ -16,5 +16,10 @@ namespace Comandas
         {
             InitializeComponent();
         }
+
+        private void FrmCardapio_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
